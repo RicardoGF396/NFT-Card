@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.main-container{
+    background-color: var(--Very-dark-blue-main-BG);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__img{
+    width: 270px;
+    border-radius: .5rem;
+}
+
+.card{
+    width: 300px;
+    background-color: var(--Very-dark-blue-card-BG);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.avatar{
+    width: 2rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+.title{
+    color: var(--White);
+    margin: 1rem 0;
+}
+
+.text{
+    color: var(--Soft-blue);
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.info,
+.value{
+    display: flex;
+}
+
+.info{
+    justify-content: space-between;
+}
+
+.value__coin{
+    margin-right: .5rem;
+    
+}
+
+.coin__text{
+    color: var(--Cyan);
+}
+
+.days{
+    display: flex;
+}
+
+.days__text{
+    margin-left: .5rem;
+    color: var(--Soft-blue);
+}
+
+.line{
+    height: 1px;
+    background-color: var(--Very-dark-blue-line);
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.autor{
+    width: 100%;
+}
+
+.autor__content{
+    display: flex;
+    align-items: center;
+}
+
+.autor__description{
+    color: var(--White);
+}
+
+span{
+    color: var(--Soft-blue);
+    font-weight: 300;
+}
+
+.text{
+    font-weight: 300;
+}
+
+.title{
+    font-weight: 600;
+}
