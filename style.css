@@ -25,12 +25,14 @@
 }
 
 .main__img{
-    width: 270px;
+    width: 290px;
     border-radius: .5rem;
 }
 
+
+
 .card{
-    width: 300px;
+    width: 320px;
     background-color: var(--Very-dark-blue-card-BG);
     border-radius: 1rem;
     display: flex;
@@ -104,7 +106,7 @@
     color: var(--White);
 }
 
-span{
+.creationOf{
     color: var(--Soft-blue);
     font-weight: 300;
 }
@@ -116,3 +118,43 @@ span{
 .title{
     font-weight: 600;
 }
+
+.title:hover,
+.name:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.eye{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.img__container{
+    position: relative;
+    
+}
+
+.hover__cyan{
+    position: absolute;
+    top: 0px;
+    width: 290px;
+    height: 290px;
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+.hover__cyan:hover{ 
+    background-color: hsla(178, 100%, 50%, 0.513);
+    cursor: pointer;
+}
+
+.hover__cyan:hover ~ .eye{
+    transition: .3s;
+    visibility: visible;
+}
+
